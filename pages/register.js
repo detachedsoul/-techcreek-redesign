@@ -1,7 +1,7 @@
 import SignUpComponent from "../components/SignUpComponent";
 
 const Register = () => {
-    return <SignUpComponent />;
+    return <SignUpComponent />
 }
  
 export default Register;
