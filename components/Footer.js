@@ -102,7 +102,7 @@ const Footer = () => {
                         <form className="flex gap-2" method="POST">
 
                             <label className="rounded-md w-full" htmlFor="newsletter-input">
-                                <input className="py-2 px-4 rounded-md w-full text-slate-900 placeholder-slate-900 focus:outline-none" placeholder="Email address" type="email" id="newsletter-input" required />
+                                <input className="rounded-md w-full input" placeholder="Email address" type="email" id="newsletter-input" required />
                             </label>
 
                             <button className="bg-blue-700 px-4 rounded-md hover:bg-default-blue" type="submit">
@@ -120,6 +120,10 @@ const Footer = () => {
             <div className="text-center py-4 px-2">
                 &copy; {new Date().getFullYear()}. Created with all the <i className="fr fi-rr-heart relative top-[0.2rem] text-red-500"></i> in the world by <Link href="https://web.facebook.com/IamWisdomOjimah"><a className="text-sky-400 hover:underline underline-offset-4 active:underline active:uderline-offset-4 active:text-sky-400" target="_blank" rel="noopener noreferrer">Wisdom Ojimah</a></Link>
             </div>
+
+            <button className="bg-default-blue/70 text-white rounded-lg py-2 px-3 fixed right-4 bottom-4 backdrop-blur" type="button" araia-label="Scroll back to top button" title="Scroll to top">
+                <i className="fr fi-rr-angle-up"></i>
+            </button>
 
         </footer>
     );

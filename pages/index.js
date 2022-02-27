@@ -1,6 +1,6 @@
 import Head from "next/head";
 import HeroComponent from "../components/HeroComponent";
-import CoreMission from "../components/CoreMission";
+import CoreMission from "../components/CoreMissionComponent";
 
 const Index = () => {
     return (

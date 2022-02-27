@@ -7,7 +7,7 @@ const CoreMission = () => {
                 Core Mission
             </h2>
             <p>
-                As an organization, we are proplled to do what we . . .
+                As an organization, we are proplled to do what we do . . .
             </p>
 
             <div className="grid gap-4 items-start lg:grid-cols-12 mt-8">
