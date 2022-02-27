@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    input,
+    button,
+    textarea {
+        @apply font-[500]
+    }
+
+    .header {
+        @apply text-white font-poppins tracking-wider
+    }
+
+}
