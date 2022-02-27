@@ -9,13 +9,12 @@
     "compile": "npx tailwindcss -i ./src/main.css -o ./styles/globals.css --watch --minify"
   },
   "dependencies": {
-    "next": "12.0.10",
+    "next": "^12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.1",
     "autoprefixer": "^10.4.2",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",

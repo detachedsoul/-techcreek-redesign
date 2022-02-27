@@ -44,7 +44,7 @@ const LoginComponent = () => {
 
                         <label className="flex gap-1 items-center cursor-pointer" htmlFor="remember-me">
 
-                            <input className="form-checkbox rounded-md p-2 text-slate-900 ring-offset-slate-700 ring-offset-2 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-slate-900" type="checkbox" name="remember-me" id="remember-me" />
+                            <input className="form-checkbox rounded-md p-2 text-slate-900 cursor-pointer ring-offset-slate-700 ring-offset-2 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-slate-900" type="checkbox" name="remember-me" id="remember-me" />
                             
                             Remember me
 
@@ -52,7 +52,7 @@ const LoginComponent = () => {
 
                         <Link href="/forgot-password">
                             <a className="text-sky-400 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4">
-                                Forgot Pasword
+                                Forgot Password
                             </a>
                         </Link>
 

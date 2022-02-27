@@ -64,7 +64,7 @@ const SignUpComponent = () => {
 
                         <label className="flex gap-1 items-center cursor-pointer" htmlFor="accept-terms">
 
-                            <input className="form-checkbox rounded-md p-2 text-slate-900 ring-offset-slate-700 ring-offset-2 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-slate-900" type="checkbox" name="accept-terms" id="accept-terms" />
+                            <input className="form-checkbox rounded-md p-2 text-slate-900 cursor-pointer ring-offset-slate-700 ring-offset-2 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-slate-900" type="checkbox" name="accept-terms" id="accept-terms" />
                             
                             Accept terms & conditions
 
@@ -79,7 +79,7 @@ const SignUpComponent = () => {
                 </div>
 
                 <p>
-                    Already have an account? <Link href="/register"><a className="text-sky-400 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4">Login instead</a></Link>
+                    Already have an account? <Link href="/login"><a className="text-sky-400 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4">Login instead</a></Link>
                 </p>
 
             </form>
