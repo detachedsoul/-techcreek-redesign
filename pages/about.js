@@ -1,15 +1,14 @@
 import Head from "next/head";
+import AboutComponent from "../components/AboutComponent";
 
 const About = () => {
     return (
         <>
             <Head>
-                <title>TechCreek &mdash; Home</title>
+                <title>TechCreek &mdash; About</title>
             </Head>
 
-            <main className="py-12 px-[5%]">
-                About the {`<Creek/>`}
-            </main>
+            <AboutComponent />
         </>
     );
 }

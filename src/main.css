@@ -11,7 +11,7 @@
     }
 
     .header {
-        @apply text-white font-poppins tracking-wider
+        @apply text-slate-400 font-luckiest-guy tracking-wider
     }
 
     .input {

@@ -1,6 +1,5 @@
 import Head from "next/head";
-import HeroComponent from "../components/HeroComponent";
-import CoreMission from "../components/CoreMissionComponent";
+import IndexComponent from "../components/IndexComponent";
 
 const Index = () => {
     return (
@@ -9,13 +8,7 @@ const Index = () => {
                 <title>TechCreek &mdash; Home</title>
             </Head>
 
-            <HeroComponent />
-
-            <main className="py-12 px-[5%]">
-
-                <CoreMission />
-
-            </main>
+            <IndexComponent />
         </>
     );
 }
