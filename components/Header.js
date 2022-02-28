@@ -9,7 +9,7 @@ const Header = () => {
 	const [navIsActive, setNavActive] = useState(false);
 
     return (
-		<header className="sticky top-0 bg-slate-900/70 border-b border-slate-800 backdrop-blur-md text-white py-1.5 px-[5%] flex flex-col gap-4 z-50 lg:flex-row lg:justify-between lg:items-center">
+		<header className="sticky top-0 bg-slate-900/70 border-b border-slate-800 backdrop-blur-xl text-white py-1.5 px-[5%] flex flex-col gap-4 z-50 lg:flex-row lg:justify-between lg:items-center">
 
 			<div className="flex items-center gap-4 justify-between">
 
