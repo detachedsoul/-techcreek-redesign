@@ -26,7 +26,7 @@ const DropdownLinks = ({ isActive }) => {
 	];
 
     return (
-        <div className={`absolute transition ease-in-out duration-700 top-[120%] w-full bg-slate-800 rounded-md py-2 px-2.5 ${isActive ? 'scale-100' : 'scale-0'} lg:shadow-xl lg:w-max lg:top-[130%]`}>
+        <div className={`absolute transition ease-in-out duration-700 top-[120%] w-full bg-slate-800 rounded-md py-2 px-2.5 z-50 ${isActive ? 'scale-100' : 'scale-0'} lg:shadow-xl lg:w-max lg:top-[130%]`}>
             
             <ul className="flex flex-col gap-1">
 
