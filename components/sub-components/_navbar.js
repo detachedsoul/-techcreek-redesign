@@ -1,82 +1,14 @@
-import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import DropdownLinks from "./_dropdown";
+import NavLinks from "./_navLinks";
 
-const Navbar = () => {
-
-    const [dropdownIsActive, setDropdownActive] = useState(false);
-    const router = useRouter();
-    const links = [
-        {
-            id: 1,
-            route: "/",
-            linkName: "Home",
-            isDropdown: false
-        },
-        {
-            id: 2,
-            route: "/about",
-            linkName: "About",
-            isDropdown: false
-        },
-        {
-            id: 3,
-            route: "/services",
-            linkName: "Services",
-            isDropdown: true
-        },
-        {
-            id: 4,
-            route: "/contact",
-            linkName: "Contact",
-            isDropdown: false
-        },
-        {
-            id: 5,
-            route: "/login",
-            linkName: "Login",
-            isDropdown: false
-        },
-        {
-            id: 6,
-            route: "/register",
-            linkName: "Register",
-            isDropdown: false
-        }
-    ];
+const Navbar = ({ navIsActive }) => {
 
     return (
-
-        <ul className="flex flex-col gap-2 p-4 lg:flex-row lg:items-center lg:p-0">
-
-            {
-                links.map(link => (
-                    <li className="relative" key={link.id}>
-
-						<Link href={link.route}>
-							<a className={`py-2 px-3 rounded-md hover:bg-slate-800 block ${router.asPath === link.route && 'bg-slate-800'}`} onClick={(e) => {
-                                if (link.isDropdown) {
-									e.preventDefault();
-									setDropdownActive(() => !dropdownIsActive);
-								} else {
-                                    return;
-                                }
-                            }}>
-								{ link.linkName }
-							</a>
-						</Link>
-
-                        {
-                            link.isDropdown && <DropdownLinks isActive={dropdownIsActive} />
-                        }
-
-					</li>
-                ))
-            }
-            
-        </ul>
-
+        <nav
+            className={`absolute transition ease-in-out duration-700 bg-slate-900 w-full top-full left-0 right-0 bottom-0 border-t border-slate-800 overflow-y-auto overscroll-none h-[calc(100vh-100%)] ${
+                navIsActive ? "scale-100" : "scale-0"
+            } lg:static lg:[overflow:unset] lg:scale-100 lg:border-none lg:bg-transparent lg:w-auto lg:h-auto`}>
+            <NavLinks />
+        </nav>
     );
 }
 
