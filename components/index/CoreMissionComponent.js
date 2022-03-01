@@ -15,7 +15,7 @@ const CoreMission = () => {
                 <div className="bg-slate-800 pb-4 grid gap-4 rounded-md lg:col-span-4">
 
                     <div className="relative rounded-t-md h-[200px] w-full">
-                        <Image className="w-full aspect-square  rounded-t-md" src="/img/learn.jpg" alt="Mission: Learn" layout="fill" objectFit="cover" objectPosition="center" />
+                        <Image className="w-full aspect-square rounded-t-md" src="/img/learn.jpg" alt="Mission: Learn" layout="fill" objectFit="cover" objectPosition="center" />
                     </div>
 
                     <div className="grid gap-1 px-4">

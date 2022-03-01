@@ -7,6 +7,7 @@ const NavLinks = () => {
 
     const [dropdownIsActive, setDropdownActive] = useState(false);
     const router = useRouter();
+    
     const links = [
         {
             id: 1,
