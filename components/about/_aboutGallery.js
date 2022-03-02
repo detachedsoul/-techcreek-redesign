@@ -4,7 +4,7 @@ const AboutImageGallery = () => {
     return (
 		<div className="my-16 space-y-8 mb-0">
 			<div className="text-center">
-				<h3 className="header text-xl">Image Gallery</h3>
+				<h3 className="header text-2xl">Image Gallery</h3>
 
 				<p>Let's take you on a tour of our facilities</p>
 			</div>

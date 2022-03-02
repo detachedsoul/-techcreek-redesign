@@ -44,7 +44,9 @@ const OurTeam = () => {
     return (
 		<div className="my-16 space-y-8 mb-0">
 			<div className="text-center">
-				<h3 className="header text-xl">Our Team</h3>
+				<h3 className="header text-2xl">
+					Our Team
+				</h3>
 
 				<p>
 					These are the people behind the success of TechCreek over

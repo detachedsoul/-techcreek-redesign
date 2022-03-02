@@ -106,8 +106,7 @@ const SignUpComponent = () => {
 				</div>
 
 				<p>
-					Already have an account?
-					<Link href="/login">
+					Already have an account? <Link href="/login">
 						<a className="text-sky-400 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4">
 							Login instead
 						</a>
