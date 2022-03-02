@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutBriefInfo = () => {
     return (
         <div className="grid gap-4 items-center lg:grid-cols-12 lg:gap-8">
-            <div className="h-[200px] relative rounded-md w-full lg:col-span-6 lg:h-[400px]">
+            <div className="h-[200px] relative rounded-md w-full lg:col-span-6 lg:h-full">
                 <Image
                     className="w-full aspect-square rounded-md"
                     src="/img/learn.jpg"

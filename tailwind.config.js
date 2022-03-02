@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         'index-hero': "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(/img/hero.jpg)",
         'about-hero': "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(/img/connect.jpg)",
+        'contact-hero': "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(/img/contact-bg.jpg)",
       },
       colors: {
         "default-blue": "#0544a8",

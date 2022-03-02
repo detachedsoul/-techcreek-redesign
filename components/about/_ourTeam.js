@@ -53,33 +53,28 @@ const OurTeam = () => {
 			</div>
 
 			<div className="grid gap-4 lg:grid-cols-12">
-				
-				{
-
-					teamMembers.map(teamMember => (
-						<div className="bg-slate-800 rounded-md grid items-center gap-4 lg:col-span-4 lg:grid-cols-12" key={teamMember.id}>
-							<div className="h-40 relative rounded-md w-full lg:col-span-5">
-								<Image
-									className="w-full aspect-square rounded-md"
-									src={ teamMember.img }
-									alt={ teamMember.name }
-									layout="fill"
-									objectFit="cover"
-									objectPosition="center"
-								/>
-							</div>
-
-							<div className="pb-4 px-4 lg:col-span-7 lg:pb-0 lg:px-0">
-								<h3 className="header">
-									{ teamMember.name }
-								</h3>
-
-								<p>{ teamMember.title }</p>
-							</div>
+				{teamMembers.map((teamMember) => (
+					<div
+						className="bg-slate-800 rounded-md grid items-center gap-4 lg:col-span-4 lg:grid-cols-12"
+						key={teamMember.id}>
+						<div className="h-40 relative rounded-t-md lg:rounded-tr-none lg:rounded-br-none lg:rounded-bl-md w-full lg:col-span-5">
+							<Image
+								className="w-full aspect-square rounded-t-md lg:rounded-tr-none lg:rounded-br-none lg:rounded-bl-md"
+								src={teamMember.img}
+								alt={teamMember.name}
+								layout="fill"
+								objectFit="cover"
+								objectPosition="center"
+							/>
 						</div>
-					))
 
-				}
+						<div className="space-y-1.5 pb-4 px-4 lg:col-span-7 lg:pb-0 lg:px-0">
+							<h3 className="header">{teamMember.name}</h3>
+
+							<p>{teamMember.title}</p>
+						</div>
+					</div>
+				))}
 			</div>
 		</div>
 	);

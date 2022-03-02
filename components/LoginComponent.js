@@ -26,7 +26,7 @@ const LoginComponent = () => {
                             <i className="fr fi-rr-user relative top-0.5"></i>
                         </span>
 
-                        <input className="w-full rounded-r-md input pl-2 bg-slate-900" type="text" placeholder="Username or email" name="username" id="username" />
+                        <input className="rounded-r-md input pl-2 bg-slate-900" type="text" placeholder="Username or email" name="username" id="username" required autoComplete="off" />
 
                     </label>
 
@@ -36,7 +36,7 @@ const LoginComponent = () => {
                             <i className="fr fi-rr-lock relative top-0.5"></i>
                         </span>
 
-                        <input className="w-full rounded-r-md input pl-2 bg-slate-900" type="password" placeholder="Password" name="password" id="password" />
+                        <input className="rounded-r-md input pl-2 bg-slate-900" type="password" placeholder="Password" name="password" id="password" required autoComplete="off" />
 
                     </label>
 

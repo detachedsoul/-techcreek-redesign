@@ -19,11 +19,13 @@ const SignUpComponent = () => {
 						</span>
 
 						<input
-							className="w-full rounded-r-md input pl-2 bg-slate-900"
+							className="rounded-r-md input pl-2 bg-slate-900"
 							type="text"
 							placeholder="Full name"
 							name="name"
-							id="name"
+							id="name" 
+							required 
+							autoComplete="off"
 						/>
 					</label>
 
@@ -35,11 +37,13 @@ const SignUpComponent = () => {
 						</span>
 
 						<input
-							className="w-full rounded-r-md input pl-2 bg-slate-900"
+							className="rounded-r-md input pl-2 bg-slate-900"
 							type="text"
 							placeholder="Username"
 							name="username"
-							id="username"
+							id="username" 
+							required 
+							autoComplete="off"
 						/>
 					</label>
 
@@ -51,11 +55,13 @@ const SignUpComponent = () => {
 						</span>
 
 						<input
-							className="w-full rounded-r-md input pl-2 bg-slate-900"
+							className="rounded-r-md input pl-2 bg-slate-900"
 							type="email"
 							placeholder="Email address"
 							name="email"
-							id="email"
+							id="email" 
+							required 
+							autoComplete="off"
 						/>
 					</label>
 
@@ -67,11 +73,13 @@ const SignUpComponent = () => {
 						</span>
 
 						<input
-							className="w-full rounded-r-md input pl-2 bg-slate-900"
+							className="rounded-r-md input pl-2 bg-slate-900"
 							type="password"
 							placeholder="Password"
 							name="password"
-							id="password"
+							id="password" 
+							required 
+							autoComplete="off"
 						/>
 					</label>
 
@@ -83,7 +91,8 @@ const SignUpComponent = () => {
 								className="form-checkbox rounded-md p-2 bg-slate-700 text-slate-900 cursor-pointer ring-offset-slate-700 ring-offset-2 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-slate-900"
 								type="checkbox"
 								name="accept-terms"
-								id="accept-terms"
+								id="accept-terms" 
+								required
 							/>
 							Accept terms & conditions
 						</label>
@@ -97,7 +106,7 @@ const SignUpComponent = () => {
 				</div>
 
 				<p>
-					Already have an account?{" "}
+					Already have an account?
 					<Link href="/login">
 						<a className="text-sky-400 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4">
 							Login instead

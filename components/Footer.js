@@ -4,7 +4,6 @@ import Script from "next/script";
 
 const Footer = () => {
 
-    // Create a ref to the scroll to top button
     const toTopBtn = useRef();
 
     const scrollToTop = () => {
@@ -17,7 +16,6 @@ const Footer = () => {
 
     useEffect(() => {
 
-        // Show or hid the scroll to top button based on user's scrolling
         window.onscroll = () => {
             if (document.documentElement.scrollTop >= 300 || document.body.scrollTop >= 300) {
                 toTopBtn.current.classList.remove('translate-x-[150%]');
@@ -32,9 +30,9 @@ const Footer = () => {
     return (
         <>
 
-            <footer className="text-slate-200 bg-slate-800">
+            <footer className="text-slate-200 px-[5%] bg-slate-800">
 
-                <div className="grid gap-8 px-[5%] py-8 border-b border-slate-200 lg:grid-cols-12 lg:gap-12">
+                <div className="grid gap-8 py-8 border-b border-slate-200 lg:grid-cols-12 lg:gap-12">
 
                     <div className="space-y-3 lg:col-span-4">
 
@@ -100,22 +98,22 @@ const Footer = () => {
 
                         <div className="space-y-2.5">
                         
-                            <p>
+                            <p aria-label="Location">
                                 <i className="fr fi-rr-marker relative top-0.5 pr-1.5"></i>
                                 Rivers State ICT Center, Opp Pleasure Park Aba Road, Port Harcourt, Rivers State, Nigeria.
                             </p>
                             
-                            <p>
+                            <p aria-label="Active hours">
                                 <i className="fr fi-rr-clock relative top-0.5 pr-1.5"></i>
                                 Mon - Fri. 8am - 5pm
                             </p>
                             
-                            <p>
+                            <p aria-label="Phone number">
                                 <i className="fr fi-rr-smartphone relative top-0.5 pr-1.5"></i>
                                 +234-818-951-3676
                             </p>
                             
-                            <p>
+                            <p aria-label="Email address">
                                 <i className="fr fi-rr-envelope relative top-0.5 pr-1.5"></i>
                                 talk@techcreek.ng
                             </p>
