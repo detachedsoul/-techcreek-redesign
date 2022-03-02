@@ -131,7 +131,7 @@ const Footer = () => {
                             <form className="flex gap-2" method="POST">
 
                                 <label className="rounded-md w-full" htmlFor="newsletter-input">
-                                    <input className="rounded-md w-full input" placeholder="Email address" type="email" id="newsletter-input" required />
+                                    <input className="rounded-md w-full input placeholder:text-slate-900 text-slate-900" placeholder="Email address" type="email" id="newsletter-input" required />
                                 </label>
 
                                 <button className="bg-blue-700 px-4 rounded-md hover:bg-default-blue" type="submit">

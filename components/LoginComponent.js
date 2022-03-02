@@ -20,31 +20,31 @@ const LoginComponent = () => {
 
                 <div className="flex flex-col gap-4">
 
-                    <label className="flex items-center bg-white rounded-md" htmlFor="username">
+                    <label className="flex items-center bg-slate-900 rounded-md text-slate-500" htmlFor="username">
 
-                        <span className="rounded-l-md text-slate-900 pl-4">
+                        <span className="rounded-l-md pl-4">
                             <i className="fr fi-rr-user relative top-0.5"></i>
                         </span>
 
-                        <input className="w-full rounded-r-md input pl-2" type="text" placeholder="Username or email" name="username" id="username" />
+                        <input className="w-full rounded-r-md input pl-2 bg-slate-900" type="text" placeholder="Username or email" name="username" id="username" />
 
                     </label>
 
-                    <label className="flex items-center bg-white rounded-md" htmlFor="password">
+                    <label className="flex items-center bg-slate-900 rounded-md text-slate-500" htmlFor="password">
 
-                        <span className="rounded-l-md text-slate-900 pl-4">
+                        <span className="rounded-l-md pl-4">
                             <i className="fr fi-rr-lock relative top-0.5"></i>
                         </span>
 
-                        <input className="w-full rounded-r-md input pl-2" type="password" placeholder="Password" name="password" id="password" />
+                        <input className="w-full rounded-r-md input pl-2 bg-slate-900" type="password" placeholder="Password" name="password" id="password" />
 
                     </label>
 
                     <div className="flex flex-wrap gap-2 items-center justify-between lg:gap-8">
 
-                        <label className="flex gap-1 items-center cursor-pointer" htmlFor="remember-me">
+                        <label className="flex gap-1.5 items-center cursor-pointer" htmlFor="remember-me">
 
-                            <input className="form-checkbox rounded-md p-2 text-slate-900 cursor-pointer ring-offset-slate-700 ring-offset-2 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-slate-900" type="checkbox" name="remember-me" id="remember-me" />
+                            <input className="form-checkbox rounded-md p-2 bg-slate-700 text-slate-900 cursor-pointer ring-offset-slate-700 ring-offset-2 focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-slate-900" type="checkbox" name="remember-me" id="remember-me" />
                             
                             Remember me
 
