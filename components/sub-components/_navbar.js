@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useContext } from "react";
 import NavLinks from "./_navLinks";
+import { Context } from "../Context";
 
-const Navbar = ({ navIsActive }) => {
+const Navbar = () => {
+
+    const { navIsActive } = useContext(Context);
 
     return (
         <nav

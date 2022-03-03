@@ -19,7 +19,7 @@ const _404 = () => {
                     <div className="space-y-1">
 
                         <h1 className="header text-3xl">
-                            Page not found.
+                            Page not found
                         </h1>
 
                         <p>

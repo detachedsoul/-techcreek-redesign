@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "./sub-components/_navbar";
+import { Context } from './Context';
 
 const Header = () => {
 
-	const [navIsActive, setNavActive] = useState(false);
+	const { navIsActive, setNavActive } = useContext(Context);
 
     return (
 		<header className="sticky top-0 bg-slate-900/70 border-b border-slate-800 text-white py-1.5 px-[5%] flex flex-col gap-4 z-50 backdrop-blur-xl lg:flex-row lg:justify-between lg:items-center">
@@ -34,7 +35,7 @@ const Header = () => {
 				</button>
 			</div>
 
-			<Navbar navIsActive={navIsActive} />
+			<Navbar />
 
 		</header>
 	);

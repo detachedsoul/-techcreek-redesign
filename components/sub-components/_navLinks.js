@@ -1,10 +1,13 @@
-import { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useState, useEffect, useContext } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import DropdownLinks from "./_dropdown";
+import { Context } from "../Context";
 
 const NavLinks = () => {
 
+    const { navIsActive, setNavActive } = useContext(Context);
     const [dropdownIsActive, setDropdownActive] = useState(false);
     const router = useRouter();
     
@@ -46,6 +49,13 @@ const NavLinks = () => {
             isDropdown: false
         }
     ];
+
+    useEffect(() => { 
+        setNavActive(() => {
+            setDropdownActive(() => dropdownIsActive = false);
+           return navIsActive = false;
+        })
+    }, [router.asPath])
 
     return (
 
