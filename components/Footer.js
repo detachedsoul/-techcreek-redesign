@@ -55,7 +55,7 @@ const Footer = () => {
                         <ul className="flex flex-col gap-3">
 
                             <li>
-                                <Link href="/trainig/codegaminator">
+                                <Link href="/training/codegaminators">
                                     <a className="text-sky-400 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4">
                                         Codegaminators
                                     </a>
@@ -63,7 +63,7 @@ const Footer = () => {
                             </li>
                             
                             <li>
-                                <Link href="/trainig/codegaminator-junior">
+                                <Link href="/training/codegaminator-junior">
                                     <a className="text-sky-400 hover:underline hover:underline-offset-4 active:underline active:underline-offset-4">
                                         Codegaminators Junior
                                     </a>

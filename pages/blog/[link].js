@@ -14,7 +14,7 @@ const BlogPost = ({ post }) => {
                 post.map(content  => (
                     <div className="my-16 px-[5%] grid gap-4 lg:w-[70%] lg:mx-auto"  key={content.id}>
                         
-                        <div className="relative rounded-md h-[250px] lg:h-[350px] w-full">
+                        <div className="relative rounded-md h-[200px] lg:h-[350px] w-full">
                             <Image className="w-full aspect-square rounded-md" src={content.img} alt={content.title } layout="fill" objectFit="cover" objectPosition="center" title={ content.title } />
                         </div>
 
@@ -34,7 +34,7 @@ const BlogPost = ({ post }) => {
 
                                 </div>
 
-                                <h1 className="header text-3xl">
+                                <h1 className="header text-xl lg:text-3xl">
                                     { content.title }
                                 </h1>
 
