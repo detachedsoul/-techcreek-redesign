@@ -1,10 +1,12 @@
-
-
 const ContactForm = () => {
     return (
         <div className="grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
 
             <div className="order-2 lg:order-1 lg:border-r lg:border-r-slate-800 lg:col-span-7 lg:pr-12">
+
+                <h1 className="header text-xl mb-5">
+                    Fill the form. It's easy.
+                </h1>
 
                 <form className="space-y-4" method="POST">
 

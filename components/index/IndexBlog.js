@@ -23,7 +23,7 @@ const IndexBlog = () => {
                         <div className="bg-slate-800 pb-4 grid gap-4 space-y-2 rounded-md lg:col-span-4" key={blogPost.id}>
 
                             <div className="relative rounded-t-md h-[200px] w-full">
-                                <Image className="w-full aspect-square rounded-t-md" src={ blogPost.img } alt={ blogPost.title } layout="fill" objectFit="cover" objectPosition="center" />
+                                <Image className="w-full aspect-square rounded-t-md" src={ blogPost.img } alt={ blogPost.title } layout="fill" objectFit="cover" objectPosition="center" title={blogPost.title} />
                             </div>
 
                             <div className="grid gap-8 px-4">
@@ -31,7 +31,7 @@ const IndexBlog = () => {
                                 <div className="space-y-1.5">
 
                                     <h3 className="header text-xl">
-                                        <Link href={ blogPost.link }>
+                                        <Link href={`/blog/${blogPost.link}`}>
                                             <a className="text-sky-400 underline-offset-4 hover:underline active:underline hover:text-default-blue active:text-default-blue">
                                                 { blogPost.title }
                                             </a>
@@ -44,10 +44,10 @@ const IndexBlog = () => {
 
                                 </div>
 
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-2">
 
                                     <div className="rounded-full h-10 w-10 relative">
-                                        <Image className="w-full h-full rounded-full" src={ blogPost.authorImg } alt={ blogPost.author } layout="fill" objectFit="cover" objectPosition="center" />
+                                        <Image className="w-full h-full rounded-full" src={ blogPost.authorImg } alt={ blogPost.author } layout="fill" objectFit="cover" objectPosition="center" title={ blogPost.author } />
                                     </div>
 
                                     <div>
