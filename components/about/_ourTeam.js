@@ -31,13 +31,13 @@ const OurTeam = () => {
 			id: 5,
 			name: "John Doe",
 			title: "Intern, TechCreek",
-			img: "/img/john-doe.jpg"
+			img: "/img/john-doe.png"
 		},
 		{
 			id: 6,
 			name: "Jane Doe",
 			title: "Intern, TechCreek",
-			img: "/img/jane-doe.jpg"
+			img: "/img/jane-doe.png"
 		},
 	];
 
